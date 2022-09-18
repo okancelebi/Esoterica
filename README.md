@@ -2,64 +2,64 @@
 
 ![Esoterica Logo](Docs/EE_Logo.png)
 
-[Esoterica Engine](https://www.esotericaengine.com) is an MIT licensed prototype game engine framework. It’s intended as a technology demonstrator, an educational tool and an R&D framework. It contains a lot of the boilerplate machinery required for resource management, serialization, gameplay, etc. It provides a lot of references for how to potentially build a resource system, basic reflection and a AAA-level animation system. It could be a good framework for experimenting with game, AI, renderer tech or as a teaching aid for how to build game engines. Additionally, if you are more interested in building your own engine, Esoterica is a really good starting point.
+[Esoterica Engine](https://www.esotericaengine.com) Esoterica Engine, MIT lisanslı bir prototip oyun motoru iskeletidir. Bir teknoloji göstericisi, bir eğitim aracı ve bir Ar-Ge iskeleti olarak tasarlanmıştır. Kaynak yönetimi, seri hale getirme, oyun oynama vb. için gereken çok sayıda standart makine içerir. Potansiyel olarak bir kaynak sisteminin nasıl oluşturulacağı, temel yansıma ve AAA düzeyinde bir animasyon sisteminin nasıl oluşturulacağı konusunda birçok referans sağlar. Oyun, yapay zeka, oluşturucu teknolojisi veya oyun motorlarının nasıl oluşturulacağı konusunda bir öğretim yardımcısı olarak denemeler yapmak için iyi bir iskelet olabilir. Ek olarak, kendi motorunuzu yapmakla daha çok ilgileniyorsanız, Esoterica gerçekten iyi bir başlangıç noktasıdır.
 
-## Important Note: Stability!
+## Önemli Not: İstikrar!
 
->Esoterica is a prototype engine that's being developed in our spare time and as such there will likely be bugs and crashes (primarily with the tooling side). It is not intended as a stable production tool. If you encounter any crashes or bugs, please file issues and we'll try to get to them as soon as we can.
+>Esoterica, boş zamanlarımızda geliştirilmekte olan bir prototip motordur ve bu nedenle muhtemelen hatalar ve çökmeler olacaktır (öncelikle takım tarafında). İstikrarlı bir üretim aracı olarak tasarlanmamıştır. Herhangi bir çökme veya hatayla karşılaşırsanız, lütfen sorunları bildirin, elimizden gelen en kısa sürede onlara ulaşmaya çalışacağız.
 
-## Help Needed: Rendering + Test Assets
+## Yardım Gerekli: Oluşturma + Test Varlıkları
 
-There are no examples of any of the tech supplied unfortunately since we do not have any assets that I can release publically. We are looking for folks that can create some test assets that we can distribute with the engine (e.g., a character model and some animations). We can then use those assets to provide a set of examples of the various tools and features.
+Herkese açık olarak yayınlayabileceğim herhangi bir varlığımız olmadığı için maalesef sağlanan hiçbir teknolojinin örneği yok. Motorla birlikte dağıtabileceğimiz bazı test varlıkları oluşturabilecek arkadaşlar arıyoruz (örneğin, bir karakter modeli ve bazı animasyonlar). Daha sonra bu varlıkları çeşitli araç ve özelliklere ilişkin bir dizi örnek sağlamak için kullanabiliriz.
 
-We are also looking for a someone to help us build out the renderer. More details can be found here: https://www.esotericaengine.com/contribute
+Ayrıca, renderer oluşturmamıza yardımcı olacak birini arıyoruz. Daha fazla ayrıntı burada bulunabilir: https://www.esotericaengine.com/contribute
 
-## What's included
+## Neler dahil
 
-* Basic core of a game engine (serialization, math, string handling, logging, etc...)
-* Libclang based c++ reflection and code-generation
-* Compiler based resource system with hot-reloading
-* Hybrid Actor/ECS object model - <https://www.youtube.com/watch?v=jjEsB611kxs>
-* AAA quality high performance animation graph system - <https://www.youtube.com/watch?v=R-T3Mk5oDHI&t=5427s>
-* Basic animation compression
-* Powered Ragdoll implmentation using PhysX articulations
-* Basic editor infrastructure and tooling using DearImgui
+* Bir oyun motorunun temel çekirdeği (seri hale getirme, matematik, dizi işleme, günlük kaydı vb.)
+* Libclang tabanlı c++ yansıma ve kod oluşturma
+* Çalışırken yeniden yüklemeli derleyici tabanlı kaynak sistemi
+* Hibrit Aktör/ECS nesne modeli - <https://www.youtube.com/watch?v=jjEsB611kxs>
+* AAA kalitesinde yüksek performanslı animasyon grafik sistemi - <https://www.youtube.com/watch?v=R-T3Mk5oDHI&t=5427s>
+* Temel animasyon sıkıştırması
+* PhysX artikülasyonlarını kullanarak güçlendirilmiş Ragdoll uygulaması
+* DearImgui kullanarak temel editör altyapısı ve araçları
 
-## Screenshots
+## Ekran görüntüleri
 
-|Resource Pipeline | Basic Editor |
+|Kaynak İşlem Hattı | Temel Düzenleyici |
 |:---:|:---:|
-|![Esoterica Resource Server](Docs/EE_ResourceServer.png)|![Esoterica Editor](Docs/EE_Editor.png)|
+|![Esoterica Kaynak Sunucusu](Docs/EE_ResourceServer.png)|![Esoterica Editor](Docs/EE_Editor.png)|
 
-| Animation Graph | Ragdoll Editor |
+| Animasyon Grafiği | Ragdoll Editörü |
 |:---:|:---:|
-|![Esoterica Animation Graph](Docs/EE_AnimGraph.png)|![Esoterica Ragdoll](Docs/EE_Ragdoll.png)|
+|![Esoterica Animasyon Grafiği](Docs/EE_AnimGraph.png)|![Esoterica Ragdoll](Docs/EE_Ragdoll.png)|
 
-## Requirements
+## Gereksinimler
 
 * Visual Studio 2022
 * FBX SDK
 
-## Building Esoterica
+## Esoterica Binası
 
-Esoterica uses vanilla msbuild for its build system. There are a set of property sheets that control all the build settings for Esoterica in the "code/property sheets" folder.
+Esoterica, yapı sistemi için vanilya msbuild kullanıyor. "code/property sheets" klasöründe Esoterica için tüm yapı ayarlarını kontrol eden bir dizi özellik sayfası vardır.
 
-1. Download the [external dependencies](https://drive.google.com/file/d/1cHaWZOBjjVvwwtgU7tl16_im3ylUjFF1/view?usp=sharing) and extract into the Esoterica root folder (X:/Esoterica Path/). You should end up with 'X:/Esoterica Path/External/'.
-2. Download and install the FBX SDK (required for editor) - <https://www.autodesk.com/developer-network/platform-technologies/fbx-sdk-2020-2-1>
-3. Open the solution "Esoterica.sln"
-4. REBUILD the "Esoterica.Scripts.Reflect" project (under the "0. Scripts" solution folder) - this will generate all the Esoterica reflection data
-5. Build the "1. Applications" solution folder - this will build all the applications needed for Esoterica to run.
+1. Dış bağımlılıkları indirin ve Esoterica kök klasörüne (X:/Esoterica Path/) ayıklayın. 'X:/Esoterica Path/External/' ile bitirmelisiniz.
+2. FBX SDK'yı indirin ve kurun (düzenleyici için gereklidir) - <https://www.autodesk.com/developer-network/platform-technologies/fbx-sdk-2020-2-1>
+3. Çözümü aç "Esoterica.sln"
+4. "Esoteria.Scripts.Reflect" projesini YENİDEN YAPIN ("0. Scripts" çözüm klasörü altında) - bu, tüm Esoterica yansıma verilerini oluşturacaktır.
+5. "1. Applications" çözüm klasörünü oluşturun - bu, Esoterica'nın çalışması için gereken tüm uygulamaları oluşturacaktır.
 
-## Applications
+## Uygulamalar
 
-Easiest way to get started, is just set the "Esoterica.Applications.Editor" as the startup project and hit run. If you want to run the engine, use the "Esoterica.Applications.Engine" project with the "-map data://path_to_map.map" argument.
+Başlamanın en kolay yolu, "Ezoterica.Applications.Editor" dosyasını başlangıç projesi olarak ayarlamak ve çalıştırmaya basmaktır. Motoru çalıştırmak istiyorsanız, "-map data://path_to_map.map" argümanıyla "Esoterica.Applications.Engine" projesini kullanın.
 
-* Engine - this is the standalone Esoterica engine client
-* Editor - This is the Esoterica editor
-* Resource Server - This is a standalone application that will compile and provide resources to the various Esoterica applications
-* Reflector - This generates the Esoterica reflection data
-* Resource Compiler - This processes resource compilation requests
-* Tester - Empty console app used for random testing
+* Motor - bu bağımsız Esoterica motor istemcisidir
+* Editör - Bu Esoterica editörü
+* Kaynak Sunucusu - Bu, çeşitli Esoterica uygulamalarına kaynak sağlayacak ve derleyecek bağımsız bir uygulamadır.
+* Reflektör - Bu, Esoterica yansıma verilerini oluşturur
+* Kaynak Derleyici - Bu, kaynak derleme isteklerini işler
+* Test Cihazı - Rastgele test için kullanılan boş konsol uygulaması
 
 ## Thirdparty projects used
 
@@ -80,12 +80,12 @@ Easiest way to get started, is just set the "Esoterica.Applications.Editor" as t
 * subprocess
 * optick
 
-These middleware packages are also integrated but require a license to use (so they are disabled by default)
+Bu ara yazılım paketleri de entegredir ancak kullanım için bir lisans gerektirir (bu nedenle varsayılan olarak devre dışı bırakılırlar)
 
 * Live++
 * Superluminal
 * Navpower
 
-## Extra Info
+## Ekstra Bilgi
 
-If you use the [SmartCommandLineArguments](https://marketplace.visualstudio.com/items?itemName=MBulli.SmartCommandlineArguments) plugin for VS then there are supplied saved arguments to help you start the engine.
+VS için SmartCommandLineArguments eklentisini kullanırsanız, motoru çalıştırmanıza yardımcı olacak kaydedilmiş argümanlar sağlanır.
