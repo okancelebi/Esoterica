@@ -1,4 +1,4 @@
-# Esoterica Prototype Game Engine
+# Esoterica Prototip Oyun Motoru
 
 ![Esoterica Logo](Docs/EE_Logo.png)
 
